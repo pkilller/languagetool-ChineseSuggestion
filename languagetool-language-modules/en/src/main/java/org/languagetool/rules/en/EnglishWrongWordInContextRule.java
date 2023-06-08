@@ -53,7 +53,7 @@ public class EnglishWrongWordInContextRule extends WrongWordInContextRule {
   
   @Override
   protected String getMessageString() {
-    return "Possibly confused word: Did you mean <suggestion>$SUGGESTION</suggestion> instead of '$WRONGWORD'?";
+    return "可能用混了单词: 你是想说 <suggestion>$SUGGESTION</suggestion> 而不是 '$WRONGWORD'?";
   }
   
   @Override

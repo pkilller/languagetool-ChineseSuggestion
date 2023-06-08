@@ -349,9 +349,9 @@ public abstract class AbstractEnglishSpellerRule extends MorfologikSpellerRule {
       // so 'word' is misspelled:
       IrregularForms forms = getIrregularFormsOrNull(word);
       if (forms != null) {
-        String message = "Possible spelling mistake. Did you mean <suggestion>" + forms.forms.get(0) +
-                "</suggestion>, the " + forms.formName + " form of the " + forms.posName +
-                " '" + forms.baseform + "'?";
+        String message = " 可能拼写错误。您是否想要说 <suggestion>" + forms.forms.get(0) +
+          "</suggestion>，即 "+ forms.formName +" 形式的 " + forms.posName +
+          " '" + forms.baseform + "'？";
         addFormsToFirstMatch(message, sentence, ruleMatches, forms.forms);
       } else {
         VariantInfo variantInfo = isValidInOtherVariant(word);
